@@ -150,8 +150,8 @@ def format_references(
         f"[begin {reference_type} {reference_index + 1}]\n\n{reference}\n\n[end {reference_type} {reference_index + 1}]"
         for reference_index, reference in enumerate(references)
     ]
-
-    return f"{intro}\n\n{'\n\n'.join(formatted_references)}\n\n"
+    txt = '\n\n'.join(formatted_references)
+    return f"{intro}\n\n{txt}\n\n"
 
 
 # Team meeting prompts
